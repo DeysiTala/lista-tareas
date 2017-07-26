@@ -72,12 +72,12 @@ document.getElementById("lista").innerHTML+= html;
 
 function ListaDeTareas(){
 	
- var list = document.createElement("li");
+  var list = document.createElement("li");
   var startList = document.getElementById("add").value;
   var t = document.createTextNode(startList);
   list.appendChild(t);
   if (startList === '') {
-    alert("You must write something!");
+    alert("Necesitas añadir una tarea");
   } else {
     document.getElementById("toDoList").appendChild(list);
   }
