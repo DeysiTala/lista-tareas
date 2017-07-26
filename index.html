@@ -4,17 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Lista de Tareas</title>
     <link rel="stylesheet" href="assets\css\style.css"/>
+    
 </head>
-<body>
-	<div id="lista">
-        <h1>Lista De Tareas</h1>
-         <ul id = "toDoList">
-         
-         
-         </ul>
-    </div>
-    <p><input id="add" type="text" name="añadir">
-         <button id = "add task" onclick="ListaDeTareas();"> Añadir Tarea </button></p>
-    <script src="assets\js\main.js"></script>
+<body >
+ <h1>Lista De Tareas</h1>
+        <input id="add" type="text" name="añadir" placeholder="Añade tu proxima tarea..."/>
+        <p><button id = "add task" onclick="ListaDeTareas();">Añadir Tarea </button></p>
+	         <ul id = "toDoList" contenteditable="true">
+                </ul>
+           
+   <script src="assets\js\main.js"></script>
 </body>
 </html>

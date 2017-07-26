@@ -11,12 +11,12 @@ body {
 }
 
 h1 {
-    font-size: 20px;
-    color:white;
+    font-size: 30px;
+    color:blue;
 }
 
 div {
-    background: #11497a;
+    background: #056bc4;
     border-radius: 4px;
     border: 1px solid #D5DDE4;
     margin: -40px 0 0;
@@ -39,7 +39,10 @@ li {
     padding: 15px 2%;
     margin: 0;
     text-align: left;
-    border-top: 1px solid #D5DDE4;
+    border-top: 1px solid #4d9de2;
+    
+
+
 }
 
 li span {
@@ -50,6 +53,9 @@ li span {
 li.current {
     background: #ffd7d8;
 }
+.toDoList li a:hover {
+    text-decoration: line-through;
+}
 
 button {
     opacity: 0.5;
@@ -59,4 +65,12 @@ button {
     border-radius: 5px;
     background: green;
     
+}
+input {
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px 35px;
+    float: left;
+    font-size: 16px;
 }
