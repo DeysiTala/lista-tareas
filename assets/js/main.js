@@ -70,6 +70,27 @@ var arrayDatos = [
  }
 document.getElementById("toDoList").innerHTML+= html;
 
+//Crear el boton elminar 
+
+var miLista = document.getElementsByTagName("LI");
+for (var i = 0; i < miLista.length; i++) {
+  var boton = document.createElement("button");
+  var nombreBoton = document.createTextNode("x");
+  boton.className = "close";
+  boton.appendChild(nombreBoton);
+  miLista[i].appendChild(boton);
+}
+
+var cerrar = document.getElementsByClassName("close");
+for (var i = 0; i < cerrar.length; i++) {
+  cerrar[i].onclick = function() { var cerrar2 = this.parentElement;
+    //parentElement devuelve null si el nodo padre no es un nodo de elemento
+    //para ocultar cada click
+    cerrar2.style.display = "none";
+  }
+}
+
+
 function ListaDeTareas(){
 	//Creamos el nodo tipo elemento
   var list = document.createElement("li");
@@ -93,22 +114,16 @@ function ListaDeTareas(){
 var editarElemento = document.getElementById("editable").value;
 }*/
 
-/*function eliminar(){
-  var eliminarT = document.getElementsByTagName('button');
-for (var i = 0; i < arrayDatos.length; i++) {
-    arrayDatos[i].addEventListener('click',redirect,false);
-}
+/*
 function redirect(event){
+
+
+
     
     var arrayD=(event.target.textContent);
     var mostrando=document.getElementById("toDoList");
     mostrando.innerHTML=list.splice(i,1);
    
 }*/
- /*function Delete(tarea){
 
-  arrayDatos.splice(tarea,1);
-  ListaDeTareas();
- }*/
-
- 
+ //contenteditable="true"
