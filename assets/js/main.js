@@ -65,20 +65,28 @@ var arrayDatos = [
   var datos = arrayDatos[i];
   var salida = 
 
-    "<div>" + "<li>" +  datos.title + "</li>" + "</div>";
+    "<li>" +  datos.title + "</li>";
   html += salida;
  }
 document.getElementById("lista").innerHTML+= html;
 
 function ListaDeTareas(){
 	
-	/*var node = document.createElement("toDoList");
-    var textnode = document.createTextNode();
-    node.appendChild(textnode);
-    document.getElementById("lista").appendChild(node);*/
+ var list = document.createElement("li");
+  var startList = document.getElementById("add").value;
+  var t = document.createTextNode(startList);
+  list.appendChild(t);
+  if (startList === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("toDoList").appendChild(list);
+  }
+  document.getElementById("add").value = "";
 
-    var addList = document.getElementById("add").value;
+
+   /*var addList = document.getElementById("add").value;
     document.getElementById("toDoList").innerHTML+= "<li>" + addList+ "</li>"
+*/
 }
 
 
