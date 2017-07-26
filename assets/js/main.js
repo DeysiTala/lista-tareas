@@ -84,10 +84,14 @@ for (var i = 0; i < miLista.length; i++) {
 //cerrar tareas
 var cerrar = document.getElementsByClassName("close");
 for (var i = 0; i < cerrar.length; i++) {
-  cerrar[i].onclick = function() { var cerrar2 = this.parentElement;
+  //expression
+  cerrar[i].onclick = function() 
+
+  { var cerrar2 = this.parentElement;
     //parentElement devuelve null si el nodo padre no es un nodo de elemento
     //para ocultar cada click
-    cerrar2.style.display = "none";
+    cerrar2.style.textDecoration = "line-through";
+    //cerra2.style.display="none";
   }
 }
 
@@ -106,13 +110,14 @@ function ListaDeTareas(){
   document.getElementById("add").value = "";
 
 
+
+  
+}
 function limpiar(){
 
 //document.getElementById("toDoList").innerHTML="";
-var listaFinal = document.getElementById("add");
+var listaFinal = document.getElementById("toDoList");
 listaFinal.parentNode.removeChild(listaFinal);
-}
-  
 }
 
    /*var addList = document.getElementById("add").value;
