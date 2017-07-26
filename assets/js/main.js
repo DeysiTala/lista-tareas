@@ -113,6 +113,7 @@ function ListaDeTareas(){
 
   
 }
+//Funcion limpiar solo me limpia, pero ya no puedo agregar
 function limpiar(){
 
 //document.getElementById("toDoList").innerHTML="";
