@@ -118,6 +118,8 @@ function limpiar(){
 //document.getElementById("toDoList").innerHTML="";
 var listaFinal = document.getElementById("toDoList");
 listaFinal.parentNode.removeChild(listaFinal);
+
+
 }
 
    /*var addList = document.getElementById("add").value;
