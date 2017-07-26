@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Lista de Tareas</title>
     <link rel="stylesheet" href="assets\css\style.css"/>
+
     
 </head>
 <body >
@@ -11,9 +13,12 @@
  <h1>Lista De Tareas</h1>
         <input id="add" type="text" name="añadir" placeholder="Añade tu proxima tarea..."/>
         <button id = "add task" onclick="ListaDeTareas();"> Añadir Tarea </button>
-	         <ul id = "toDoList" >
+	         <ul id = "toDoList" contenteditable="true">
+
                 </ul>
-        
+    
+    <button id="remove" onclick="limpiar();" >Limpiar Lista</button>
    <script src="assets\js\main.js"></script>
+
 </body>
 </html>

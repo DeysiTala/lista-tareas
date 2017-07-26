@@ -72,8 +72,8 @@ document.getElementById("toDoList").innerHTML+= html;
 
 //Crear el boton elminar 
 
-//var miLista = document.getElementsByTagName("LI");
-for (var i = 0; i < arrayDatos.length; i++) {
+var miLista = document.getElementsByTagName("li");
+for (var i = 0; i < miLista.length; i++) {
   var boton = document.createElement("button");
   var nombreBoton = document.createTextNode("x");
   boton.className = "close";
@@ -81,6 +81,7 @@ for (var i = 0; i < arrayDatos.length; i++) {
   miLista[i].appendChild(boton);
 }
 
+//cerrar tareas
 var cerrar = document.getElementsByClassName("close");
 for (var i = 0; i < cerrar.length; i++) {
   cerrar[i].onclick = function() { var cerrar2 = this.parentElement;
@@ -89,7 +90,6 @@ for (var i = 0; i < cerrar.length; i++) {
     cerrar2.style.display = "none";
   }
 }
-
 
 function ListaDeTareas(){
 	//Creamos el nodo tipo elemento
@@ -106,10 +106,19 @@ function ListaDeTareas(){
   document.getElementById("add").value = "";
 
 
+function limpiar(){
+
+//document.getElementById("toDoList").innerHTML="";
+var listaFinal = document.getElementById("add");
+listaFinal.parentNode.removeChild(listaFinal);
+}
+  
+}
+
    /*var addList = document.getElementById("add").value;
     document.getElementById("toDoList").innerHTML+= "<li>" + addList+ "</li>"
 */
-}
+
  /* function seleccionar() {
 var editarElemento = document.getElementById("editable").value;
 }*/
