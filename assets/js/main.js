@@ -72,8 +72,8 @@ document.getElementById("toDoList").innerHTML+= html;
 
 //Crear el boton elminar 
 
-var miLista = document.getElementsByTagName("LI");
-for (var i = 0; i < miLista.length; i++) {
+//var miLista = document.getElementsByTagName("LI");
+for (var i = 0; i < arrayDatos.length; i++) {
   var boton = document.createElement("button");
   var nombreBoton = document.createTextNode("x");
   boton.className = "close";
