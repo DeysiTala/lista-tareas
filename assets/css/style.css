@@ -32,7 +32,7 @@ ol {
 
 }
 
-li {
+li{
     font-size: 20px;
     color: #07090c;
     width: 96%;
@@ -40,7 +40,9 @@ li {
     margin: 0;
     text-align: left;
     border-top: 1px solid #4d9de2;
-    
+    text-decoration: line-through;
+  
+}
 
 
 }

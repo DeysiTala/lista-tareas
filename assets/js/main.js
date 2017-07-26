@@ -105,10 +105,10 @@ function redirect(event){
     mostrando.innerHTML=list.splice(i,1);
    
 }*/
- function Delete(tarea){
+ /*function Delete(tarea){
 
   arrayDatos.splice(tarea,1);
   ListaDeTareas();
- }
+ }*/
 
  
