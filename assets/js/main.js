@@ -90,8 +90,10 @@ for (var i = 0; i < cerrar.length; i++) {
   { var cerrar2 = this.parentElement;
     //parentElement devuelve null si el nodo padre no es un nodo de elemento
     //para ocultar cada click
+    //cerrar2.style.display="none";
+    //para tachar el texto 
     cerrar2.style.textDecoration = "line-through";
-    //cerra2.style.display="none";
+    
   }
 }
 
